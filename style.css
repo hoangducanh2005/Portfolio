@@ -422,6 +422,36 @@ span {
     font-family: 'Itim', cursive; /* Dùng font viết tay cho chữ Studio Ghibli */
 }
 
+.footer-contact {
+    display: flex;
+    flex-direction: column; /* Stack phone and email vertically */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.footer-contact p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.footer-contact i {
+    font-size: 2rem;
+    color: var(--main-color); /* Your Ghibli Sky Blue */
+}
+
+.footer-contact span {
+    transition: 0.3s ease;
+}
+
+/* Optional: Add a hover effect for your contact details */
+.footer-contact p:hover span {
+    color: var(--main-color);
+    cursor: pointer;
+}
 
 /* BreakPoint */
 
