@@ -215,6 +215,10 @@ span {
     transform: translateY(-4px);  /* Nút nảy nhẹ lên trên */
 }
 
+.vary {
+    margin-bottom: 14px;
+}
+
 /* About Section */
 
 .about {
@@ -260,7 +264,9 @@ span {
 }
 
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: #5d4d37;
     margin: 2rem 0 3rem;
 }
 
@@ -445,7 +451,8 @@ span {
 
 .footer-contact span {
     transition: 0.3s ease;
-}
+}   
+
 
 /* Optional: Add a hover effect for your contact details */
 .footer-contact p:hover span {
