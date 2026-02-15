@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module">
+    </script>
+    <!-- favicon -->
+    <link rel="icon" href="assets/animations/totoro.png">
+
+    <!-- Basic Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Filled Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <!-- Brand Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <!-- Ghibli theme -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hoang Duc Anh - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <div id="preloader">
+      <dotlottie-wc
+        src="assets/animations/preloader.json"
+        style="width: 300px; height: 300px"
+        autoplay
+        loop
+      >
+      </dotlottie-wc>
+    </div>
+
+    <header class="header">
+      <a href="#home" class="logo">Hoang Duc Anh</a>
+
+      <i class="bx bx-menu" id="menu-icon"> </i>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="assets/avatar.jpg" alt="Profile Image" />
+      </div>
+
+      <div class="home-content">
+        <h3>Hi, I am</h3>
+        <h1>Hoang Duc Anh</h1>
+        <h3>And I'm a <span class="multiple-text">Web Developer</span></h3>
+        <p>
+          I'm a passionate web developer with expertise in creating dynamic and
+          responsive websites. With a strong background in HTML, CSS,
+          JavaScript, and various frameworks, I strive to deliver high-quality
+          web solutions that meet the needs of clients and users alike.
+        </p>
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/hoang-duc-anh-31b32530a/"
+            target="_blank"
+          >
+            <i class="bxl bx-linkedin"></i>
+          </a>
+          <a href="https://github.com/hoangducanh2005" target="_blank">
+            <i class="bxl bx-github"></i>
+          </a>
+          <a href="https://www.instagram.com/storii_alexs/" target="_blank">
+            <i class="bxl bx-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/hoang.duc.anh.915589"
+            target="_blank"
+          >
+            <i class="bxl bx-facebook"></i>
+          </a>
+        </div>
+        <a href="#" class="btn">Download my CV</a>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>I'm a <span>Frontend Developer</span></h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          pariatur nulla id iusto laboriosam nam.
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+      <div class="about-img">
+        <img src="assets/about.jpg" alt="about_me" />
+      </div>
+    </section>
+
+    <!-- projects section -->
+    <section id="services">
+      =
+      <h2 class="heading">My <span>Projects</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            pariatur nulla id iusto laboriosam nam.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            pariatur nulla id iusto laboriosam nam.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            pariatur nulla id iusto laboriosam nam.
+          </p>
+          <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" />
+          <input type="email" name="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" name="number" placeholder="Phone Number" />
+          <input type="text" name="subject" placeholder="Email Subject" />
+        </div>
+
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/hoang-duc-anh-31b32530a/"
+          target="_blank"
+        >
+          <i class="bxl bx-linkedin"></i>
+        </a>
+        <a href="https://github.com/hoangducanh2005" target="_blank">
+          <i class="bxl bx-github"></i>
+        </a>
+        <a href="https://www.instagram.com/storii_alexs/" target="_blank">
+          <i class="bxl bx-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/hoang.duc.anh.915589" target="_blank">
+          <i class="bxl bx-facebook"></i>
+        </a>
+      </div>
+
+      <div class="footer-text">
+        <p>
+            Developed with <i class="bx bx-heart bx-remove-padding" style="font-size: 70%; color: var(--main-color);"></i> 
+            by <span>Hoang Duc Anh | HEDSPI HUST K68</span>
+        </p>
+        <p>Inspired by the magic of <strong>Studio Ghibli</strong></p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script2.js"></script>
+  </body>
+</html>
