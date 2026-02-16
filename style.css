@@ -337,7 +337,7 @@ span {
 /* Chỉ áp dụng kích thước nhỏ cho icon trong Tech Stack, không đè lên icon chính */
 .project-tech i {
     font-size: 3rem; 
-    color: inherit; /* Giữ màu nguyên bản (colored) của Devicon */
+    color: inherit;
     transition: 0.3s ease;
 }
 
@@ -594,4 +594,124 @@ span {
     html{
         font-size: 50%;
     }
+}
+
+/* --- Skills Section Final Version --- */
+.skills {
+    background: var(--bg-color);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Giữ 2 box bằng nhau */
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 4rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-box {
+    flex: 1 1 45rem;
+    background: var(--snd-bg-color);
+    padding: 4rem 3rem;
+    border-radius: 2.5rem;
+    border: 0.2rem solid transparent;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hiệu ứng hover cho cả cái hộp lớn */
+.skills-box:hover {
+    border-color: var(--main-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(46, 181, 229, 0.2);
+}
+
+.skills-box h3 {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--main-color);
+    text-align: center; /* Căn giữa tiêu đề cho đẹp */
+    /* Đã bỏ font-family Itim theo yêu cầu */
+}
+
+/* --- Tech Stack Styling --- */
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+    /* Căn giữa lưới icon trong hộp */
+    align-content: center; 
+    flex-grow: 1; /* Để nó chiếm không gian tương đương phần certificates */
+}
+
+.tech-list i {
+    font-size: 5rem;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Hiệu ứng nảy (bounce) nhẹ */
+    cursor: pointer;
+}
+
+/* HIỆU ỨNG HOVER CHO LOGO TECH STACK */
+.tech-list i:hover {
+    transform: scale(1.2) translateY(-5px); /* Phóng to và bay lên nhẹ */
+    filter: drop-shadow(0 5px 15px var(--main-color)); /* Phát sáng màu chủ đạo */
+}
+
+/* --- Certificates Styling (Giữ nguyên vì bạn đã ưng ý) --- */
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center; /* Căn giữa các chứng chỉ theo chiều dọc */
+    flex-grow: 1;
+}
+
+.cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background: var(--bg-color);
+    border-radius: 1.5rem;
+    border-left: 5px solid var(--main-color);
+    transition: 0.3s ease;
+}
+
+.cert-item:hover {
+    transform: translateX(10px);
+    background: var(--main-color);
+}
+
+.cert-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-info small {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+.cert-item:hover .cert-name,
+.cert-item:hover .cert-score,
+.cert-item:hover .cert-info small {
+    color: var(--bg-color);
+    opacity: 1;
+}
+
+.cert-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.cert-score {
+    font-size: 2rem;
+    font-weight: 800;
 }
