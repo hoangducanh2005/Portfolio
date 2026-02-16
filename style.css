@@ -270,46 +270,48 @@ span {
     margin: 2rem 0 3rem;
 }
 
-
-
-/* services section */
+/* --- Services/Projects Section --- */
 
 #services h2 {
-    margin-bottom :5rem;
+    margin-bottom: 5rem;
 }
 
 .services-container {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: stretch; /* Giữ các box có chiều cao bằng nhau */
     flex-wrap: wrap;
-    gap: 3rem; /* Khoảng cách giữa các hộp dịch vụ với nhau */
-    margin-top: 2rem; /* Thêm một chút lề trên nếu cần */
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
 .services-container .services-box {
     flex: 1 1 30rem;
     background: var(--snd-bg-color);
-    padding: 6rem 2rem 6rem;
+    /* Giảm padding một chút để cân đối với logo công nghệ mới thêm vào */
+    padding: 5rem 2.5rem 4rem; 
     border-radius: 2rem;
     text-align: center;
-    border: 0.3rem solid var(--bg-color);
-    transition: 0.5s ease-in-out ;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    /* Turn the box itself into a flex column */
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    
+    /* Layout Flexbox bên trong box */
     display: flex;
     flex-direction: column;
 }
 
 .services-container .services-box:hover {
     border-color: var(--main-color);
-    transform : scale(1.02);
-    box-shadow: 0 10px 25px rgba(46, 181, 229, 0.3);
-
+    transform: scale(1.02) translateY(-5px); /* Thêm một chút nảy lên */
+    box-shadow: 0 10px 25px rgba(46, 181, 229, 0.2);
 }
+
+/* Icon chính của dự án */
 .services-box i {
     font-size: 7rem;
     color: var(--main-color);
+    margin-bottom: 1.5rem;
 }
 
 .services-box h3 {
@@ -318,13 +320,38 @@ span {
 
 .services-box p {
     font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+    /* Giảm margin-bottom từ 3rem xuống 1.5rem để Tech Stack nằm gần mô tả hơn */
+    margin: 1.5rem 0 1.5rem; 
+    line-height: 1.6;
 }
 
-.services-box .btn {
-    margin-top: auto; /* This magic line pushes the button to the very bottom */
-    align-self: center; /* Keeps it centered horizontally */
+/* Khu vực Logo công nghệ (Tech Stack) */
+.project-tech {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem; /* Khoảng cách trước khi đến nút Source Code */
+    flex-wrap: wrap;
 }
+
+/* Chỉ áp dụng kích thước nhỏ cho icon trong Tech Stack, không đè lên icon chính */
+.project-tech i {
+    font-size: 3rem; 
+    color: inherit; /* Giữ màu nguyên bản (colored) của Devicon */
+    transition: 0.3s ease;
+}
+
+.project-tech i:hover {
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 0 5px var(--main-color));
+}
+
+/* Nút bấm Source Code */
+.services-box .btn {
+    margin-top: auto; /* Đẩy nút xuống đáy box bất kể đoạn văn dài hay ngắn */
+    align-self: center;
+}
+
 
 /* Contact section */
 .contact {
