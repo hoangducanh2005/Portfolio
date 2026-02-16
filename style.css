@@ -281,7 +281,7 @@ span {
 .services-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 3rem; /* Khoảng cách giữa các hộp dịch vụ với nhau */
     margin-top: 2rem; /* Thêm một chút lề trên nếu cần */
@@ -296,6 +296,9 @@ span {
     border: 0.3rem solid var(--bg-color);
     transition: 0.5s ease-in-out ;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    /* Turn the box itself into a flex column */
+    display: flex;
+    flex-direction: column;
 }
 
 .services-container .services-box:hover {
@@ -316,6 +319,11 @@ span {
 .services-box p {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+.services-box .btn {
+    margin-top: auto; /* This magic line pushes the button to the very bottom */
+    align-self: center; /* Keeps it centered horizontally */
 }
 
 /* Contact section */
